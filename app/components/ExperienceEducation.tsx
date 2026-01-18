@@ -133,10 +133,6 @@ export default function ExperienceEducation({ experience, education }: Props) {
               </li>
             ))}
           </ul>
-
-          <p className="mt-10 text-center text-sm md:text-base text-black/70">
-            Always learning — <span className="font-semibold text-black">striving to be better than I was yesterday.</span>
-          </p>
         </div>
       </div>
     </div>
