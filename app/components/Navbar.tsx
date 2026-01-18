@@ -83,22 +83,6 @@ export default function Navbar() {
               </a>
             )}
           </div>
-
-          <button
-            onClick={() => setOpen(false)}
-            aria-label="Close menu"
-            className="grid h-10 w-10 place-items-center rounded-full border border-black/20 text-black"
-          >
-            <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none">
-              <path
-                d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </button>
         </div>
 
         {/* big links */}

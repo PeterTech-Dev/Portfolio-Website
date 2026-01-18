@@ -68,7 +68,14 @@ export default function Page() {
                 {portfolio.headline}
               </p>
 
-              <div className="mt-3 flex items-center gap-2 text-sm text-black/80">
+              <div
+                className="
+                  mt-4 inline-flex items-center gap-2
+                  text-sm font-medium
+                  text-black/80
+                  max-md:text-white/90
+                "
+              >
                 <svg
                   className="h-4 w-4 fill-current"
                   viewBox="0 0 24 24"
@@ -280,7 +287,6 @@ export default function Page() {
         <Section
           id="projects"
           title="Projects"
-          subtitle="A few things I’ve built (add screenshots later)."
         >
           <div className="grid gap-4 sm:grid-cols-2">
             {portfolio.projects.map((p) => (
