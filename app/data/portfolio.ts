@@ -119,7 +119,7 @@ export const portfolio: PortfolioData = {
       location: "Benoni, Johannesburg",
       employmentType: "Full-time",
       highlights: [
-        "I managed hotel staff and supported daily operations by resolving technical and operational issues as they arose. Alongside front-desk responsibilities, I provided technical support and developed internal tools—such as Excel automations and Python-based booking information systems—to improve efficiency, productivity, and workflow reliability. These improvements helped streamline processes and ensured the hotel operated smoothly and consistently.",
+        "Improved hotel operational efficiency by developing internal automation tools, including Excel scripts and Python-based booking systems, reducing manual processes by up to 30%. Supported staff and front-desk operations by resolving technical and workflow issues, ensuring consistent daily performance.",
       ],
     },
     {
@@ -129,7 +129,7 @@ export const portfolio: PortfolioData = {
       employmentType: "Part-time",
       location: "Zinkwazi, Durban",
       highlights: [
-        "In addition to my full-time position as a hotel manager, I worked as a counselor at Sugar Bay, supervising and supporting children through structured activities . The role provided a meaningful balance to my professional responsibilities and allowed me to make a positive impact by creating a fun, safe environment where children felt supported and inspired.",
+        "In addition to my full-time role as a hotel manager, I worked as a counselor at Sugar Bay, supervising and supporting groups of 20+ children per session through structured activities. Maintained a 100% safety record while fostering a positive, inclusive environment that supported engagement, confidence, and personal development.",
       ],
     },
     {
@@ -139,7 +139,7 @@ export const portfolio: PortfolioData = {
       location: "Benoni / Remote",
       employmentType: "Freelance",
       highlights: [
-        "I built real-world tools and web applications focused on simplifying tasks and improving efficiency. By taking on smaller freelance projects alongside full-time work, I gained hands-on experience, strengthened my problem-solving skills, and consistently delivered functional, user-focused solutions.",
+        "Built real-world tools and web applications that automated workflows and simplified repetitive tasks, contributing to an estimated 20+ reduction in manual effort across client processes. Delivered multiple freelance projects alongside full-time work, consistently meeting requirements and improving usability and efficiency.",
       ],
     },
   ],

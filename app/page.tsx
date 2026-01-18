@@ -212,25 +212,30 @@ export default function Page() {
 
                 <div className="text-base md:text-lg leading-relaxed text-black/80 space-y-5">
                   <p>
-                    I’m a full-stack developer who loves creating software and
-                    applications from the ground up. I learned how to code because I enjoy
-                    inventing and turning ideas into real, functional solutions. To me, coding
-                    is the future of innovation, and I love being part of it.
+                    Hey, I’m Peter.
                   </p>
 
                   <p>
-                    I’ve managed hotels and worked as a kids’ camp counselor—experiences that
-                    shaped me into a strong leader and people-focused problem solver. I handle
-                    challenges calmly and efficiently, always prioritizing clear communication
-                    and positive collaboration.
+                    I’m a <span className="font-medium text-black">software engineer and full-stack developer</span> who studied at{" "}
+                    <span className="font-medium text-black">Eduvos Bedfordview</span>, where I completed my bachelor’s degree with distinctions.
+                    I enjoy building software from the ground up and turning ideas into practical, efficient solutions.
                   </p>
 
                   <p>
-                    With a strong passion for UI and front-end development, I enjoy building
-                    accessible, engaging interfaces that feel good to use.
-                    I’m driven by curiosity, creativity, and
-                    continuous improvement as I work towards becoming one of the best software engineers.
+                    I work mainly with <span className="font-medium text-black">full-stack and Python development</span>, building automated tools
+                    and web applications that improve productivity and solve real-world problems.
                   </p>
+
+                  <p>
+                    With a background in <span className="font-medium text-black">hotel management</span> and{" "}
+                    <span className="font-medium text-black">youth counseling</span>, I bring strong communication, leadership, and problem-solving
+                    skills. I’m always pushing myself to take on new challenges across web, automation, AI, and mobile development.
+                  </p>
+                  <div className="mt-10 border-l-2 border-black/20 pl-4">
+                    <p className="text-sm md:text-base italic text-black/60">
+                      Curiosity is the start of everything I build.
+                    </p>
+                  </div>
                 </div>
               </div>
 
