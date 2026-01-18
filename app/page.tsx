@@ -5,7 +5,6 @@ import ProjectCard from "./components/ProjectCard";
 import ExperienceEducation from "./components/ExperienceEducation";
 import Footer from "./components/Footer";
 import Image from "next/image";
-import { Analytics } from "@vercel/analytics/react";
 
 const marqueeItems =
   portfolio.skills.find((g) => g.title === "Languages")?.items ?? [];
