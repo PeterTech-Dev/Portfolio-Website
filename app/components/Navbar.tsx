@@ -1,13 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { portfolio } from "../data/portfolio";
 import styles from "./navIcon3.module.css";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
-  // lock scroll when menu is open
+  // Lock scroll only when mobile menu is open
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     return () => {
@@ -18,15 +17,44 @@ export default function Navbar() {
   return (
     <>
       {/* Top bar */}
-      <header className="fixed top-0 left-0 right-0 z-999 bg-white/70 backdrop-blur border-b border-black/10">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur border-b border-black/10">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
-          <div className="font-medium">Portfolio</div>
+          <a href="#" className="font-medium">
+            Portfolio
+          </a>
 
-          {/* Hamburger */}
+          {/* Desktop nav */}
+          <nav className="hidden md:block">
+            <ul className="flex items-center gap-8 text-sm font-medium">
+              <li>
+                <a href="#about" className="hover:opacity-70 transition-opacity">
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  className="hover:opacity-70 transition-opacity"
+                >
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  className="hover:opacity-70 transition-opacity"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          {/* Mobile Hamburger */}
           <button
             onClick={() => setOpen((v) => !v)}
             aria-label={open ? "Close menu" : "Open menu"}
-            className="grid h-10 w-10 place-items-center rounded-full bg-black text-white"
+            className="grid h-10 w-10 place-items-center rounded-full bg-black text-white md:hidden"
           >
             <div className={`${styles.icon3} ${open ? styles.open : ""}`}>
               <span />
@@ -38,62 +66,21 @@ export default function Navbar() {
         </div>
       </header>
 
-      {/* Fullscreen menu overlay */}
+      {/* Mobile fullscreen menu overlay */}
       <div
         className={[
-          "fixed inset-0 z-[60] bg-white transition-all duration-300",
+          "fixed inset-0 z-[60] bg-white transition-all duration-300 md:hidden",
           open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none",
         ].join(" ")}
       >
-        {/* top row (quick links + close) */}
-        <div className="sticky top-16 flex items-center justify-between px-4 py-4">
-          <div className="flex gap-2">
-            {portfolio.links.linkedin && (
-              <a
-                href={portfolio.links.linkedin}
-                target="_blank"
-                rel="noreferrer"
-                className="
-                  rounded-full bg-black px-4 py-2 text-xs font-medium text-white
-                  transition-all duration-200
-                  hover:scale-[1.03] hover:-translate-y-px
-                  hover:shadow-md
-                  active:scale-[0.98]
-                "
-              >
-                LinkedIn
-              </a>
-            )}
-
-            {/* If you have resume link, add it in your data and render here */}
-            {portfolio.links.website && (
-              <a
-                href={portfolio.links.website}
-                target="_blank"
-                rel="noreferrer"
-                className="
-                  rounded-full bg-black px-4 py-2 text-xs font-medium text-white
-                  transition-all duration-200
-                  hover:scale-[1.03] hover:-translate-y-px
-                  hover:shadow-md
-                  active:scale-[0.98]
-                "
-              >
-                Resume
-              </a>
-            )}
-          </div>
-        </div>
-
-        {/* big links */}
-        <nav className="h-[calc(100vh-64px)] px-4 pb-10">
+        <nav className="h-[calc(100vh-64px)] px-4 pb-10 pt-16">
           <ul className="flex h-full flex-col justify-end gap-6">
             <li>
               <a
                 href="#about"
                 onClick={() => setOpen(false)}
                 className="
-                  block text-6xl font-semibold tracking-tight text-black md:text-8xl
+                  block text-6xl font-semibold tracking-tight text-black
                   transition-all duration-200 ease-out
                   hover:translate-x-2 hover:opacity-80
                 "
@@ -106,7 +93,7 @@ export default function Navbar() {
                 href="#projects"
                 onClick={() => setOpen(false)}
                 className="
-                  block text-6xl font-semibold tracking-tight text-black md:text-8xl
+                  block text-6xl font-semibold tracking-tight text-black
                   transition-all duration-200 ease-out
                   hover:translate-x-2 hover:opacity-80
                 "
@@ -119,7 +106,7 @@ export default function Navbar() {
                 href="#contact"
                 onClick={() => setOpen(false)}
                 className="
-                  block text-6xl font-semibold tracking-tight text-black md:text-8xl
+                  block text-6xl font-semibold tracking-tight text-black
                   transition-all duration-200 ease-out
                   hover:translate-x-2 hover:opacity-80
                 "

@@ -7,12 +7,15 @@ import ConkerDashboard1 from "../assets/ConkerTweaksDashboard1.png";
 import ConkerHome from "../assets/ConkerTweaksHome.png";
 import ConkerHomeDash2 from "../assets/ConkerTweaksHomeDashboard2.png";
 import ConkerProfile from "../assets/ConkerTweaksProfile.png";
-
 import RustalyticsImg from "../assets/Rustalytics.png";
 import PocketCoderHome from "../assets/HomeBanner.png";
 import PocketCoderEdit from "../assets/EditorBanner.png";
 import PocketCoderChat from "../assets/ChatBanner.png";
 import PocketCoderConsole from "../assets/ConsoleBanner.png";
+import Bitcoin from "../assets/bitcoin.png";
+import Scraper from "../assets/SteamScraper.png";
+import Inventory from "../assets/Inventory.png";
+
 
 
 export type LinkSet = {
@@ -116,11 +119,7 @@ export const portfolio: PortfolioData = {
       location: "Benoni, Johannesburg",
       employmentType: "Full-time",
       highlights: [
-        "Managed front-desk operations while providing technical support and developing internal tools to streamline daily workflows.",
-        "Designed and built Python-based automation tools to reduce manual tasks and improve operational efficiency.",
-        "Standardized and optimized Word and Excel documents, improving usability, consistency, and workflow speed.",
-        "Collaborated on the pre-launch development of the hotel website, contributing to front-end features and UI improvements.",
-        "Professional reference available upon request.",
+        "I managed hotel staff and supported daily operations by resolving technical and operational issues as they arose. Alongside front-desk responsibilities, I provided technical support and developed internal tools—such as Excel automations and Python-based booking information systems—to improve efficiency, productivity, and workflow reliability. These improvements helped streamline processes and ensured the hotel operated smoothly and consistently.",
       ],
     },
     {
@@ -128,23 +127,19 @@ export const portfolio: PortfolioData = {
       company: "Sugar Bay Holiday Resort",
       period: "Dec 2023 – Jan 2025",
       employmentType: "Part-time",
+      location: "Zinkwazi, Durban",
       highlights: [
-        "Successfully balanced this role alongside a full-time position, demonstrating strong time management and reliability.",
-        "Supervised and supported children during resort activities, ensuring a safe, inclusive, and positive environment.",
-        "Planned and facilitated age-appropriate games and structured programs to keep children engaged and active.",
-        "Communicated effectively with parents, guardians, and staff to support individual needs and smooth daily operations.",
+        "In addition to my full-time position as a hotel manager, I worked as a counselor at Sugar Bay, supervising and supporting children through structured activities . The role provided a meaningful balance to my professional responsibilities and allowed me to make a positive impact by creating a fun, safe environment where children felt supported and inspired.",
       ],
     },
     {
       title: "Software Engineer",
       company: "Freelance / Personal Projects",
-      period: "Ongoing",
+      period: "Present",
       location: "Benoni / Remote",
       employmentType: "Freelance",
       highlights: [
-        "Developed and deployed multiple real-world tools and web applications across automation, scraping, and full-stack development.",
-        "Focused on writing clean, maintainable code with attention to data handling, performance, and practical usability.",
-        "Independently managed projects from concept to delivery, applying iterative improvements based on real use cases.",
+        "I built real-world tools and web applications focused on simplifying tasks and improving efficiency. By taking on smaller freelance projects alongside full-time work, I gained hands-on experience, strengthened my problem-solving skills, and consistently delivered functional, user-focused solutions.",
       ],
     },
   ],
@@ -187,14 +182,16 @@ export const portfolio: PortfolioData = {
       description:
         "Private trading assistant that combines rule-based signals with pattern analysis to help evaluate entries/exits and reduce noise during volatile market movement.",
       tech: ["Python", "Pandas", "Backtesting", "Data Analysis"],
+      images: [Bitcoin],
       notes: ["Client-only / private delivery"],
     },
     {
-      name: "Steam Price Scraper & Inventory Calculator",
+      name: "Steam Inventory Calculator",
       period: "Apr 2025",
       description:
         "Data pipeline that collects Steam market prices, cleans/normalizes results, and generates inventory valuation reports with export-ready summaries.",
       tech: ["Python", "Web Scraping", "CSV Export", "Data Cleaning"],
+      images: [Inventory],
       links: {
         github: "https://github.com/PeterTech-Dev/Steam-Friends-Inventory-Checker",
       },
@@ -204,6 +201,7 @@ export const portfolio: PortfolioData = {
       description:
         "Automation script that extracts pricing data, validates results, and outputs structured datasets for further analysis and reporting.",
       tech: ["Python", "Requests", "Parsing", "Automation"],
+      images: [Scraper],
       links: {
         github: "https://github.com/PeterTech-Dev/Steam-Price-Scraper",
       },
@@ -249,6 +247,7 @@ export const portfolio: PortfolioData = {
       institution: "Ashton International College",
       period: "2017 – 2023",
       location: "Benoni, Johannesburg",
+      status: "Completed",
     },
   ],
 

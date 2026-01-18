@@ -32,10 +32,10 @@ export default function Page() {
                   h-full w-full
                   object-cover
                   grayscale contrast-125 brightness-95
-                  scale-130
+                  scale-110
                   z-20
                 "
-                style={{ objectPosition: "55% 65%" }}
+                style={{ objectPosition: "50% 60%" }}
               />
             </div>
 
@@ -60,7 +60,7 @@ export default function Page() {
 
               <p className="text-lg font-light">Hi, I’m</p>
 
-              <h1 className="mt-2 text-5xl font-semibold tracking-tight md:text-8xl">
+              <h1 className="mt-2 text-5xl font-semibold tracking-tight md:text-6xl">
                 {portfolio.name}
               </h1>
 
@@ -137,6 +137,20 @@ export default function Page() {
                     hover:bg-black hover:text-white
                     max-md:hover:bg-white max-md:hover:text-black
                   "
+                  href={portfolio.links.website}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Resume
+                </a>
+
+                <a
+                  className="
+                    border px-5 py-2 text-sm transition
+                    border-current
+                    hover:bg-black hover:text-white
+                    max-md:hover:bg-white max-md:hover:text-black
+                  "
                   href={`mailto:${portfolio.links.email}`}
                 >
                   Email me
@@ -160,8 +174,8 @@ export default function Page() {
                       <Image
                         src={skillIcons[name]}
                         alt={name}
-                        width={35}
-                        height={35}
+                        width={25}
+                        height={25}
                       />
                     )}
                     <span>{name}</span>
@@ -198,7 +212,7 @@ export default function Page() {
 
                 <div className="text-base md:text-lg leading-relaxed text-black/80 space-y-5">
                   <p>
-                    I’m a passionate full-stack developer who loves creating software and
+                    I’m a full-stack developer who loves creating software and
                     applications from the ground up. I learned how to code because I enjoy
                     inventing and turning ideas into real, functional solutions. To me, coding
                     is the future of innovation, and I love being part of it.
@@ -214,10 +228,7 @@ export default function Page() {
                   <p>
                     With a strong passion for UI and front-end development, I enjoy building
                     accessible, engaging interfaces that feel good to use.
-                    <span className="font-semibold text-black">
-                      {" "}HTML, CSS, JavaScript, Python, C++, and Lua{" "}
-                    </span>
-                    are part of my toolkit, and I’m driven by curiosity, creativity, and
+                    I’m driven by curiosity, creativity, and
                     continuous improvement as I work towards becoming one of the best software engineers.
                   </p>
                 </div>
@@ -234,10 +245,6 @@ export default function Page() {
                       Tools I use often.
                     </p>
                   </div>
-
-                  <span className="text-sm font-semibold text-black">
-                    {portfolio.skills.reduce((acc, g) => acc + g.items.length, 0)} total
-                  </span>
                 </div>
 
                 <div className="space-y-8">
@@ -247,9 +254,6 @@ export default function Page() {
                         <h3 className="text-base md:text-lg font-semibold text-black">
                           {group.title}
                         </h3>
-                        <span className="text-sm text-black/70 font-medium">
-                          {group.items.length}
-                        </span>
                       </div>
 
                       <div className="flex flex-wrap gap-3">

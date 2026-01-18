@@ -124,7 +124,6 @@ export default function ExperienceEducation({ experience, education }: Props) {
                     <ul className="mt-6 space-y-3 text-base leading-relaxed text-black/80">
                         {(item as ExperienceItem).highlights.map((h, i) => (
                         <li key={i} className="flex gap-3">
-                            <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-black" />
                             <span>{h}</span>
                         </li>
                         ))}
